@@ -24,7 +24,7 @@ export default Node.create({
                     type: 'footnoteRef',
                     attrs: {
                         id: newCount,
-                        href: "#ref" + newCount,
+                        href: "#fn" + newCount,
                         content: "[" + newCount + "]"
                     },
                 });
@@ -37,7 +37,7 @@ export default Node.create({
                     type: 'footnote',
                     attrs: {
                         id: "fn" + newCount,
-                        href: "#ref" + newCount,
+                        href: "#fnref" + newCount,
                         content: "hello"
                     },
                     content: [

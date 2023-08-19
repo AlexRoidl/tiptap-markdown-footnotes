@@ -73,7 +73,7 @@ export default Node.create({
     renderHTML({ node }) {
         return [
             'p',
-            { href: node.attrs.id.replace('fn', '#fnref'), class: 'footnote-item' },
+            { class: 'footnote-item', id: node.attrs.id },
             [
                 'a',
                 { href: node.attrs.id.replace('fn', '#fnref'), class: 'footnote-backref' },
